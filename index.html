@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Untuk Jelita</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      background: #fffdfd;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.7;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Untuk Jelita</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #fffdfd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+    }
 
-    /* ------------------- FOTO ------------------- */
-    .profile-wrapper {
-      position: relative;
-      width: 6cm;   /* diameter foto */
-      height: 6cm;
-      margin: 30px auto 40px auto;
-    }
+    /* ------------------- FOTO ------------------- */
+    .profile-wrapper {
+      position: relative;
+      width: 6cm;   /* diameter foto */
+      height: 6cm;
+      margin: 30px auto 40px auto;
+    }
 
-    .profile-pic {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border: 5px solid #ffb6d9;
-      object-fit: cover;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
+    .profile-pic {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 5px solid #ffb6d9;
+      object-fit: cover;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
 
-    /* hiasan di sekitar foto */
-    .decoration {
-      position: absolute;
-      width: 1.5cm;
-      height: 1.5cm;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    /* hiasan di sekitar foto */
+    .decoration {
+      position: absolute;
+      width: 1.5cm;
+      height: 1.5cm;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
-    .top { top: -0.8cm; left: 50%; transform: translateX(-50%); }
-    .bottom { bottom: -0.8cm; left: 50%; transform: translateX(-50%); }
-    .left { left: -0.8cm; top: 50%; transform: translateY(-50%); }
-    .right { right: -0.8cm; top: 50%; transform: translateY(-50%); }
+    .top { top: -0.8cm; left: 50%; transform: translateX(-50%); }
+    .bottom { bottom: -0.8cm; left: 50%; transform: translateX(-50%); }
+    .left { left: -0.8cm; top: 50%; transform: translateY(-50%); }
+    .right { right: -0.8cm; top: 50%; transform: translateY(-50%); }
 
-    /* ------------------- KOTAK TEKS ------------------- */
-    .content {
-      position: relative;
-      max-width: 700px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+    /* ------------------- KOTAK TEKS ------------------- */
+    .content {
+      position: relative;
+      max-width: 700px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
 
-    .content h1 {
-      text-align: center;
-      color: #d63384;
-      margin-bottom: 30px;
-    }
+    .content h1 {
+      text-align: center;
+      color: #d63384;
+      margin-bottom: 30px;
+    }
 
-    .content p {
-      margin-bottom: 16px;
-      font-size: 16px;
-      line-height: 1.8;
-    }
+    .content p {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
 
-    .content .footer {
-      margin-top: 30px;
-      font-style: italic;
-      color: #555;
-    }
+    .content .footer {
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+    }
 
-    .emoji {
-      font-size: 1.2em;
-    }
+    .emoji {
+      font-size: 1.2em;
+    }
 
-    /* hiasan pinggir content */
-    .content::before,
-    .content::after {
-      content: "";
-      position: absolute;
-      width: 2cm;
-      height: 2cm;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    /* hiasan pinggir content */
+    .content::before,
+    .content::after {
+      content: "";
+      position: absolute;
+      width: 2cm;
+      height: 2cm;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
-    .content::before {
-      top: -1cm;
-      left: -1cm;
-      background-image: url('https://i.ibb.co/0JbWkDy/bunga-kecil.png');
-    }
+    .content::before {
+      top: -1cm;
+      left: -1cm;
+      background-image: url('https://i.ibb.co/0JbWkDy/bunga-kecil.png');
+    }
 
-    .content::after {
-      bottom: -1cm;
-      right: -1cm;
-      background-image: url('https://i.ibb.co/jZsBpzn/kupu-kupu-kecil.png');
-    }
-  </style>
+    .content::after {
+      bottom: -1cm;
+      right: -1cm;
+      background-image: url('https://i.ibb.co/jZsBpzn/kupu-kupu-kecil.png');
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Satu foto bulat diameter 6cm -->
-  <div class="profile-wrapper">
-    <img src="https://i.ibb.co/6w0pQfP/example-photo.jpg" alt="Foto Profil" class="profile-pic">
-    <div class="decoration top" style="background-image:url('https://i.ibb.co/0JbWkDy/bunga-kecil.png')"></div>
-    <div class="decoration bottom" style="background-image:url('https://i.ibb.co/jZsBpzn/kupu-kupu-kecil.png')"></div>
-    <div class="decoration left" style="background-image:url('https://i.ibb.co/4t8mVJc/bunga-warna.png')"></div>
-    <div class="decoration right" style="background-image:url('https://i.ibb.co/6YtFGpM/kupu-warna.png')"></div>
-  </div>
+  <!-- Satu foto bulat diameter 6cm -->
+  <div class="profile-wrapper">
+    <img src="https://raw.githubusercontent.com/perbulua/Untuk-seseorang-/aaa46dc2407357ab30f3535cd07083297bdebbf8/foto1.jpg" alt="Foto Profil" class="profile-pic">
+    <div class="decoration top" style="background-image:url('https://i.ibb.co/0JbWkDy/bunga-kecil.png')"></div>
+    <div class="decoration bottom" style="background-image:url('https://i.ibb.co/jZsBpzn/kupu-kupu-kecil.png')"></div>
+    <div class="decoration left" style="background-image:url('https://i.ibb.co/4t8mVJc/bunga-warna.png')"></div>
+    <div class="decoration right" style="background-image:url('https://i.ibb.co/6YtFGpM/kupu-warna.png')"></div>
+  </div>
 
-  <!-- Kotak teks -->
-  <div class="content">
-    <h1>Hai Jelita 💖</h1>
+  <!-- Kotak teks -->
+  <div class="content">
+    <h1>Hai Jelita 💖</h1>
 
-    <p>Namamu aja udah bikin senyum, apalagi orangnya. Kadang aku mikir, kamu tuh nyata nggak sih? Soalnya kehadiranmu kayak notifikasi chat yang kadang muncul, kadang hilang—tapi selalu aku tungguin 😅</p>
+    <p>Namamu aja udah bikin senyum, apalagi orangnya. Kadang aku mikir, kamu tuh nyata nggak sih? Soalnya kehadiranmu kayak notifikasi chat yang kadang muncul, kadang hilang—tapi selalu aku tungguin 😅</p>
 
-    <p>Aku tahu, kita nggak selalu intens chat-an. Kadang kamu sibuk, kadang aku sok sibuk (padahal cuma nunggu balasanmu sambil scroll meme). Tapi serius, meskipun komunikasi kita naik-turun kayak sinyal di pelosok, rasaku ke kamu tetap stabil—full bar.</p>
+    <p>Aku tahu, kita nggak selalu intens chat-an. Kadang kamu sibuk, kadang aku sok sibuk (padahal cuma nunggu balasanmu sambil scroll meme). Tapi serius, meskipun komunikasi kita naik-turun kayak sinyal di pelosok, rasaku ke kamu tetap stabil—full bar.</p>
 
-    <p>Rindu ini tuh nggak pake jam kerja. Bisa muncul pas makan, pas kerja, bahkan pas mau tidur. Rasanya kayak nunggu chat dari kamu yang 'typing...' tapi nggak jadi dikirim. Ganggu, tapi manis.</p>
+    <p>Rindu ini tuh nggak pake jam kerja. Bisa muncul pas makan, pas kerja, bahkan pas mau tidur. Rasanya kayak nunggu chat dari kamu yang 'typing...' tapi nggak jadi dikirim. Ganggu, tapi manis.</p>
 
-    <p>Aku cuma pengen kamu tahu, di tengah segala kesibukan dan drama hidup, ada satu orang yang selalu dukung kamu dari jauh. Kalau kamu lelah, ingat: kamu udah sejauh ini, jangan nyerah. Kalau dunia nyebelin, jangan lupa kamu pernah bikin hidup aku lebih seru (dan lebih absurd dikit karena senyum-senyum sendiri).</p>
+    <p>Aku cuma pengen kamu tahu, di tengah segala kesibukan dan drama hidup, ada satu orang yang selalu dukung kamu dari jauh. Kalau kamu lelah, ingat: kamu udah sejauh ini, jangan nyerah. Kalau dunia nyebelin, jangan lupa kamu pernah bikin hidup aku lebih seru (dan lebih absurd dikit karena senyum-senyum sendiri).</p>
 
-    <p>Jelita, semangat terus ya. Jangan biarin hari-harimu kelabu, apalagi kalau kamu bisa jadi pelangi buat orang lain (dan terutama buat aku). Dan hey... jangan terlalu lama ilang. Soalnya, rindu ini udah kayak kucing dikasih ikan asin—nggak bisa diem, nyariin terus. <span class="emoji">🐱💬</span></p>
+    <p>Jelita, semangat terus ya. Jangan biarin hari-harimu kelabu, apalagi kalau kamu bisa jadi pelangi buat orang lain (dan terutama buat aku). Dan hey... jangan terlalu lama ilang. Soalnya, rindu ini udah kayak kucing dikasih ikan asin—nggak bisa diem, nyariin terus. <span class="emoji">🐱💬</span></p>
 
-    <p class="footer">Kalau nanti kamu baca ini, dan senyum-senyum sendiri... yaudah, berarti aku berhasil. Tapi jangan senyum doang, chat aku juga dong 😜</p>
-  </div>
+    <p class="footer">Kalau nanti kamu baca ini, dan senyum-senyum sendiri... yaudah, berarti aku berhasil. Tapi jangan senyum doang, chat aku juga dong 😜</p>
+  </div>
 
 </body>
-  </html>
+</html>
