@@ -16,14 +16,14 @@
     /* ------------------- FOTO ------------------- */
     .profile-wrapper {
       position: relative;
-      width: 6cm;   /* diameter foto */
-      height: 6cm;
+      width: 150px; /* ukuran foto profil */
+      height: 150px;
       margin: 30px auto 40px auto;
     }
 
     .profile-pic {
-      width: 6cm;
-      height: 6cm;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       border: 5px solid #ffb6d9;
       object-fit: cover;
@@ -34,30 +34,33 @@
     /* hiasan di sekitar foto */
     .decoration {
       position: absolute;
-      width: 1.5cm;
-      height: 1.5cm;
+      width: 35px;
+      height: 35px;
       background-size: contain;
       background-repeat: no-repeat;
       pointer-events: none;
     }
 
     .top {
-      top: -0.75cm;
+      top: -17.5px;
       left: 50%;
       transform: translateX(-50%);
     }
+
     .bottom {
-      bottom: -0.75cm;
+      bottom: -17.5px;
       left: 50%;
       transform: translateX(-50%);
     }
+
     .left {
-      left: -0.75cm;
+      left: -17.5px;
       top: 50%;
       transform: translateY(-50%);
     }
+
     .right {
-      right: -0.75cm;
+      right: -17.5px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -121,9 +124,9 @@
 </head>
 <body>
 
-  <!-- Satu foto bulat diameter 6cm -->
+  <!-- Foto profil bulat ukuran 150x150 px -->
   <div class="profile-wrapper">
-    <img src="https://raw.githubusercontent.com/perbulua/Untuk-seseorang-/aaa46dc2407357ab30f3535cd07083297bdebbf8/foto1.jpg" alt="Foto Profil" class="profile-pic">
+    <img src="https://raw.githubusercontent.com/perbulua/Untuk-seseorang-/aaa46dc2407357ab30f3535cd07083297bdebbf8/foto1.jpg" alt="Foto Profil" class="profile-pic" />
     <div class="decoration top" style="background-image:url('https://i.ibb.co/0JbWkDy/bunga-kecil.png')"></div>
     <div class="decoration bottom" style="background-image:url('https://i.ibb.co/jZsBpzn/kupu-kupu-kecil.png')"></div>
     <div class="decoration left" style="background-image:url('https://i.ibb.co/4t8mVJc/bunga-warna.png')"></div>
@@ -149,3 +152,4 @@
 
 </body>
 </html>
+
